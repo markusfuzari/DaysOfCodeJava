@@ -13,4 +13,9 @@ public class ResultadoConsulta {
 
     @JsonProperty(value = "errorMessage")
     private String errorMessage;
+
+    @Override
+    public String toString() {
+        return String.format("{filmes: %s, errorMessage: \"%s\"}", filmes.toString(), errorMessage);
+    }
 }
